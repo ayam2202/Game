@@ -456,17 +456,16 @@ nav ul li a:hover {
 	line-height: 1.5;
 	width: 700px;
 	margin: 0px;
-	left: 155px;
 }
 .box6 {
 	display: flex;
 	gap: 20px;
-	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .star3 {
 	position: relative;
 	height: 90px;
-	left: 440px;
 	top: -50px;
 	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
 }
@@ -513,4 +512,5 @@ footer {
 	width:1100px; 
 	margin:30px;
 	margin-top: 100px;
+
 }
