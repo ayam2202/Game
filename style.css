@@ -1,0 +1,516 @@
+@font-face {font-family: 'Cafe24SurroundAir'; src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');font-weight: normal;font-display: swap; }
+@font-face {font-family: 'GangwonEducationTteontteon'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff'); font-weight: normal;font-display: swap; }
+
+		/*--Animation--*/
+@keyframes floatUpDown {
+	0% {transform: translateY(0px);}
+    50% {transform: translateY(-25px);}
+    100% {transform: translateY(0px);}
+}
+@keyframes floatSideLR {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+}
+@keyframes floatSideRL {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-20px); }
+    100% { transform: translateX(0); }
+}
+@keyframes autoRotateAnimation{
+	from{transform: rotate(90deg);}
+    to{transform: rotate(360deg);}
+}
+@keyframes autoShowAnimaton {
+    from {opacity: 0; transform: translateY(200px) scale(0.3);}
+    to {opacity: 1; transform: translateY(0) scale(1);}
+}
+@keyframes slider {
+	0%{transform: translateX(0%);}
+	10%{transform: translateX(-100%);}
+	20%{transform: translateX(-100%);}
+	30%{transform: translateX(-200%);}
+	40%{transform: translateX(-200%);}
+	50%{transform: translateX(-200%);}
+	60%{transform: translateX(-300%);}
+	70%{transform: translateX(-300%);}
+	80%{transform: translateX(-300%);}
+	90%{transform: translateX(0%);}
+	100%{transform: translateX(0%);}
+}
+.autoShow {animation: autoShowAnimaton; animation-timeline: view(70% 5%);
+}
+        /*--Main--*/
+body, section, h1, h2, p, footer {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #6b6b6b;
+}
+section {
+}
+body, section, footer {
+	height: 800px;
+	width: 1280px;
+}
+h1 {
+	font-size: 90px;
+	font-family: 'GangwonEducationTteontteon';
+	color: #CAD183;
+	text-align: left;
+	text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+}
+h2 {
+	font-size: 60px;
+	font-family: 'GangwonEducationTteontteon';
+	text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+}
+p {
+	font-size: 24px;
+	font-family: 'Cafe24SurroundAir';
+	color: #CAD183;
+	line-height: 1.5;
+}
+		/*--Nav--*/
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: color 0.3s; background: 0.3s;
+	font-family: 'Cafe24SurroundAir';
+}
+ul {
+	list-style: none;
+    display: flex;
+    align-items: center;
+   	gap: 20px;
+}
+nav {
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+   	position: sticky;
+    z-index: ;
+    width: 1280px;
+}
+nav ul li a {
+   	padding: 10px 20px;
+    border-radius: 20px;
+}
+nav ul li a:hover {
+	background-color: #66023C;
+    color: white;
+}
+.nav {
+	width: 1280px;
+}
+.flex {
+	display: flex; 
+	justify-content: space-between;
+}
+		/*--Page 1--*/
+.page1 {
+	background-image: linear-gradient(to bottom, transparent, black);
+}
+.star1 {
+	position: absolute;
+	width: 700px;
+	left: 100px;
+	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
+}
+.star1 img{
+	display: flex;
+}
+.title {
+	position: absolute; 
+	left: 120px;
+	top: 80px;
+	width: 700px;
+}
+.subtitle {
+	position: absolute;
+	left: 620px;
+	top: 500px;
+	text-align: center;
+}
+.controller {
+	position: absolute; 
+	left: 350px;
+    top: 160px;
+    width: 900px;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+		/*--Page 2--*/
+.page2 {
+	background: black;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.text2 {
+    text-align: center;
+	line-height: 1.5;
+	width: 1000px;
+	margin: 0px;
+}
+.artboard {
+	width: 1000px;
+}
+		/*--Page 3--*/
+.page3 {
+	background-image: linear-gradient(to bottom, black, #CAD183);
+}
+.text3 {
+	text-align: center;
+	margin: 0px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	left: 400px;
+	top: 200px;
+	color: #CAD183;
+	width: 700px;
+}
+.star2 {
+	position: absolute;
+	height: 700px;
+	left: 307px;
+	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
+}
+.rotate {
+	animation: autoRotateAnimation;
+	animation-timeline: view() ;
+}
+		/*--Page 4--*/
+.page4 {
+	background: #CAD183;
+	background-image: url(light-bulb.png);
+	background-size: 400px;
+	background-attachment: fixed;
+	background-position: 420px 0%;
+	background-repeat: no-repeat;
+}
+.text4 {
+	color: #66023C;
+	position: relative;
+}
+.boost {
+	width: 890px;
+	top: -482px;
+	left: 232px;
+}
+.kid {
+	position: relative; 
+    width: 1240px;
+    height: 170px;
+    position: cover;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
+}
+.hair {
+	top: -2px;
+	animation: 
+	floatSideLR 2s ease-in-out infinite;
+
+}
+.eyes {
+	top: 122px;
+	animation: 
+	floatSideRL 2s ease-in-out infinite;
+}
+.mouth {
+	top: 115px;
+	animation: 
+	floatSideLR 2s ease-in-out infinite;
+}
+.neck {
+	top: 107px;
+	animation: 
+	floatSideRL 2s ease-in-out infinite;
+}
+.plus1 {
+	width: 280px;
+	top: -454px;
+	left: 53px;
+}
+.plus2 {
+	width: 280px;
+	top: -711px;
+	left: 946px;
+	text-align: right;
+}
+		/*--Page 5--*/
+.page5 {
+	background-image: linear-gradient(to bottom right,#CAD183, #66023C, black);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1200px;
+	height: 720px;
+	padding: 40px;
+}
+.container {
+	position: relative;
+}		
+.container .wrapper {
+	width: 400px;
+	height: 500px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+	margin: 100px 100px;
+	overflow: hidden;
+}
+.container .wrapperholder {
+	display: grid;
+	grid-template-columns: repeat(5, 100%);
+	height: 100%;
+	width: 100%;
+	animation: slider 15s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+	background-image: url(Zelda.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container #slider-img-2{
+	background-image: url(terraria.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container #slider-img-3{
+	background-image: url(overcooked.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container #slider-img-4{
+	background-image: url(minecraft.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container #slider-img-5{
+	background-image: url(mario.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.container .buttonholder .button {
+	background-color: #CAD183;
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	display: inline-block;
+	margin: .3rem;
+}
+.container .buttonholder{
+	position: absolute;
+	left: 240px;
+	top: 520px;
+}
+.button:hover {
+	box-shadow: 0px 0px 7px 4px rgba(0, 0, 0, 0.6);
+
+}
+.example {
+	width: 100px;
+	top: -605px;
+	left: 575px;
+	position: relative;
+	color: #CAD183;
+}
+.text5 {
+	width: 520px;
+	top: -980px;
+	left: 680px;
+	position: relative;
+}
+		/*--Page 6--*/
+.page6 {
+	background-image: url(desk.jpg);
+	background-size: cover;
+	text-align: center;
+	height: 770px;
+}
+.text6 {
+	color: #CAD183;
+	padding-top: 30px;
+}
+.p1 {
+	background: rgba(202, 209, 131, 0.7);
+	color: #66023C;
+	width: 700px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	margin-left: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.p2 {
+	background: rgba(202, 209, 131, 0.7);;
+	color: #66023C;
+	width: 650px;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	margin-left: 530px;
+}
+.box6 {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+
+		/*--Page 7--*/
+.page7 {
+	background-image: url(giphy.gif);
+	background-color: #CAD183;
+	background-blend-mode: overlay;
+	background-repeat: repeat;
+	background-size: 15% auto;
+}
+		/*--Page 8--*/
+.page8 {
+	background-image: linear-gradient(to top, white, #CAD183), url(MichiganStateUni.png);
+	padding-top: 40px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: lighten;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.text8 {
+	color: #66023C;
+	margin-top: 40px;
+}
+.box8 {
+	justify-content: center;
+	text-align: center;
+}
+
+		/*--Page 9--*/
+.page9 {
+	background: white;
+}
+.text9 {
+	text-align: center;
+	margin-left: 40px;
+	margin-top: 20px;
+	color: #66023C;
+}
+.minecraftgallery {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 40px;
+}
+.gallery {
+	height: 650px;
+	width: 1200px;
+	display: flex;
+	margin: 10px;
+	box-sizing: border-box;
+}
+.gallery:hover .active{
+	flex-basis: 0;
+	}
+.image-box {
+	margin: 0 1%;
+	flex-grow: 1;
+	flex-basis: 0;
+	transition: 1s;
+	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
+}
+.image-box:nth-child(1):hover{
+	flex-basis: 50%;
+}
+.active{
+	flex-basis: 50%;
+}
+.image-box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: .8s;
+	border-radius: 40px;
+}
+.image-box:hover {
+	flex-basis: 50%;
+}
+		/*--Page13--*/
+.page13 {
+	background-color: white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.text13 {
+	position: relative;
+	color: #66023C;
+	text-align: center;
+	line-height: 1.5;
+	width: 700px;
+	margin: 0px;
+	left: 155px;
+}
+.box6 {
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+.star3 {
+	position: relative;
+	height: 90px;
+	left: 440px;
+	top: -50px;
+	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
+}
+		/*--Footer--*/
+footer {
+	background: linear-gradient(to bottom, white, #66023C, #66023C);
+		padding: 40px;
+}
+.footer {
+	width: 1200px;
+	height: 630px;
+}
+.footer-content {
+	display: flex;
+	gap: 50px;
+	margin-bottom: 30px;
+}
+.footer-col {
+	width: 300px;
+}
+.footer-col h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+	color: #CAD183;
+}
+.footer-col p {
+	margin: 6px
+}
+.footer-col a {
+	color: #CAD183;
+	text-decoration: none;
+}
+.footer-col a:hover {
+	text-decoration: underline;
+}
+.footer-bottom {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+.line {
+	height:1px; 
+	background-color:#CAD183; 
+	width:1100px; 
+	margin:30px;
+	margin-top: 100px;
+}
