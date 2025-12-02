@@ -42,17 +42,16 @@
 }
         /*--Main--*/
 body, section, h1, h2, p, footer {
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 }
 body {
 	background: #6b6b6b;
+	overflow-x: hidden ;
 }
 section {
+	position: relative;
 }
-body, section, footer {
-	height: 800px;
-	width: 1280px;
 }
 h1 {
 	font-size: 90px;
@@ -78,7 +77,8 @@ a {
 	color: white;
 	font-size: 1rem;
 	font-weight: 600;
-	transition: color 0.3s; background: 0.3s;
+	transition: color 0.3s; 
+	background: 0.3s;
 	font-family: 'Cafe24SurroundAir';
 }
 ul {
@@ -94,7 +94,6 @@ nav {
    	box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
    	position: sticky;
     z-index: ;
-    width: 1280px;
 }
 nav ul li a {
    	padding: 10px 20px;
@@ -105,7 +104,6 @@ nav ul li a:hover {
     color: white;
 }
 .nav {
-	width: 1280px;
 }
 .flex {
 	display: flex; 
@@ -114,11 +112,12 @@ nav ul li a:hover {
 		/*--Page 1--*/
 .page1 {
 	background-image: linear-gradient(to bottom, transparent, black);
+	height: 800px;
 }
 .star1 {
 	position: absolute;
-	width: 700px;
-	left: 100px;
+	width: 70%;
+	left: 10%;
 	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
 }
 .star1 img{
@@ -126,20 +125,26 @@ nav ul li a:hover {
 }
 .title {
 	position: absolute; 
-	left: 120px;
-	top: 80px;
-	width: 700px;
+	width: 70%;
+	margin: 70px;
+	margin-left: 10%;
+	font-size: 90px;
+	font-family: 'GangwonEducationTteontteon';
+	color: #CAD183;
+	text-align: left;
+	text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
 }
 .subtitle {
 	position: absolute;
-	left: 620px;
-	top: 500px;
+	left: 56%;
+	top: 470px;
 	text-align: center;
 }
 .controller {
-	position: absolute; 
-	left: 350px;
-    top: 160px;
+	position: relative; 
+	margin: 50px;
+	left: 30%;
+    top: 60px;
     width: 900px;
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
     animation: floatUpDown 4s ease-in-out infinite;
@@ -150,6 +155,7 @@ nav ul li a:hover {
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	height: 800px;
 }
 .text2 {
     text-align: center;
@@ -163,6 +169,7 @@ nav ul li a:hover {
 		/*--Page 3--*/
 .page3 {
 	background-image: linear-gradient(to bottom, black, #CAD183);
+	height: 800px;
 }
 .text3 {
 	text-align: center;
@@ -170,7 +177,7 @@ nav ul li a:hover {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	left: 400px;
+	left: 30%;
 	top: 200px;
 	color: #CAD183;
 	width: 700px;
@@ -178,7 +185,7 @@ nav ul li a:hover {
 .star2 {
 	position: absolute;
 	height: 700px;
-	left: 307px;
+	left: 25%;
 	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
 }
 .rotate {
@@ -191,8 +198,9 @@ nav ul li a:hover {
 	background-image: url(light-bulb.png);
 	background-size: 400px;
 	background-attachment: fixed;
-	background-position: 420px 0%;
+	background-position: 50%;
 	background-repeat: no-repeat;
+	height: 800px;
 }
 .text4 {
 	color: #66023C;
@@ -247,7 +255,6 @@ nav ul li a:hover {
 	background-image: linear-gradient(to bottom right,#CAD183, #66023C, black);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 1200px;
 	height: 720px;
 	padding: 40px;
 }
@@ -384,6 +391,7 @@ nav ul li a:hover {
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	height: 800px;
 }
 .text8 {
 	color: #66023C;
@@ -397,6 +405,7 @@ nav ul li a:hover {
 		/*--Page 9--*/
 .page9 {
 	background: white;
+	height: 800px;
 }
 .text9 {
 	text-align: center;
@@ -448,6 +457,7 @@ nav ul li a:hover {
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	height: 800px;
 }
 .text13 {
 	position: relative;
@@ -467,7 +477,6 @@ nav ul li a:hover {
 	position: relative;
 	height: 90px;
 	top: -50px;
-	left: 280px;
 	filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
 }
 		/*--Footer--*/
@@ -476,7 +485,6 @@ footer {
 		padding: 40px;
 }
 .footer {
-	width: 1200px;
 	height: 630px;
 }
 .footer-content {
@@ -515,4 +523,3 @@ footer {
 	margin-top: 100px;
 
 }
-
